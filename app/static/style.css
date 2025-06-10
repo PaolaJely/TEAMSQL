@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.chat-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.respuesta {
+    margin-top: 20px;
+    background: #e0f7fa;
+    padding: 10px;
+    border-left: 5px solid #00796b;
+}
+
+.respuesta {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.respuesta h4 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+.respuesta h5 {
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+/* Estilos para las respuestas estructuradas */
+.respuesta-producto {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid #2e7d32;
+}
+
+.beneficios-producto, .beneficios-categoria {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border-left: 4px solid #1565c0;
+}
+
+.beneficios-producto h4, .beneficios-categoria h4 {
+    color: #0d47a1;
+    margin-top: 0;
+}
+
+.beneficios-producto ul, .beneficios-categoria ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.beneficios-producto li, .beneficios-categoria li {
+    background: #bbdefb;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+.aviso {
+    background: #fff3e0;
+    padding: 10px;
+    border-left: 4px solid #ff6d00;
+    color: #e65100;
+}
+
