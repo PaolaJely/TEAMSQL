@@ -9,7 +9,8 @@ def init_db(app):
             host=DB_HOST,
             user=DB_USER,
             password=DB_PASSWORD,
-            database=DB_NAME
+            database=DB_NAME,
+            port=3306
         )
         g.cursor = g.db.cursor(dictionary=True)
 
