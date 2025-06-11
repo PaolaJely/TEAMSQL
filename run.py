@@ -1,9 +1,14 @@
-# run.py
 import os
-from app import create_app
+try:
+    from app import create_app
+except Exception as e:
+    print("ERROR IMPORTANDO create_app():", e)
 
-app = create_app()  # <- Esta es la instancia que Gunicorn usará
+try:
+    app = create_app()
+except Exception as e:
+    print("ERROR EJECUTANDO create_app():", e)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
