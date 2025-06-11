@@ -10,7 +10,9 @@ def init_db(app):
             user=DB_USER,
             password=DB_PASSWORD,
             database=DB_NAME,
-            port=int(os.getenv("DB_PORT", 3306))
+            port=int(os.getenv("DB_PORT", 3306)),
+            ssl_ca="/etc/ssl/cert.pem",
+            connect_timeout=5
         )
         g.cursor = g.db.cursor(dictionary=True)
 
