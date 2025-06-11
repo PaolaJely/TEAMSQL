@@ -1,6 +1,0 @@
-{
-  "build": {
-    "builder": "railpack",
-    "startCommand": "/opt/venv/bin/gunicorn --bind 0.0.0.0:$PORT --workers 1 run:app"
-  }
-}
