@@ -10,7 +10,7 @@ def init_db(app):
             user=DB_USER,
             password=DB_PASSWORD,
             database=DB_NAME,
-            port=3306
+            port=int(os.getenv("DB_PORT", 3306))
         )
         g.cursor = g.db.cursor(dictionary=True)
 
